@@ -1,0 +1,308 @@
+========================================================================
+              WELCOME TO VEHICLE RENTAL MANAGEMENT SYSTEM               
+========================================================================
+Startup data loaded successfully.
+You can now manage vehicles, customers, rentals and payments.
+
+Sample login-free data:
+  Vehicles : V101, V102, V103
+  Customers: C001, C002
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
+Enter your choice: 1
+
+========================================================================
+                           AVAILABLE VEHICLES                           
+========================================================================
+ID      TYPE     BRAND        MODEL        RATE/DAY       STATUS
+------------------------------------------------------------------------
+V101    Car      Toyota       Camry        Rs. 2,000.00  AVAILABLE
+V104    Car      BMW          5 Series     Rs. 5,000.00  AVAILABLE
+V105    Car      Mercedes-Benz C-Class      Rs. 5,500.00  AVAILABLE
+V106    Car      Audi         A4           Rs. 4,500.00  AVAILABLE
+V107    Car      Bugatti      Chiron       Rs. 25,000.00 AVAILABLE
+V108    Car      Mahindra     Thar         Rs. 3,000.00  AVAILABLE
+V109    Car      Hyundai      Creta        Rs. 2,500.00  AVAILABLE
+V102    Bike     Yamaha       R15          Rs. 700.00    AVAILABLE
+V110    Bike     Royal Enfield Classic 350  Rs. 800.00    AVAILABLE
+V111    Bike     Kawasaki     Ninja 650    Rs. 1,500.00  AVAILABLE
+V112    Bike     Harley-Davidson Iron 883     Rs. 1,800.00  AVAILABLE
+V113    Bike     KTM          Duke 390     Rs. 900.00    AVAILABLE
+V114    Bike     Royal Enfield Himalayan 450 Rs. 1,000.00  AVAILABLE
+V103    Van      Tata         Winger       Rs. 3,000.00  AVAILABLE
+V115    Van      Toyota       HiAce        Rs. 4,000.00  AVAILABLE
+V116    Van      Force        Traveller    Rs. 3,500.00  AVAILABLE
+
+Press Enter to continue...
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
+Enter your choice: 5
+
+========================================================================
+                             RENT A VEHICLE                             
+========================================================================
+
+========================================================================
+                           AVAILABLE VEHICLES                           
+========================================================================
+ID      TYPE     BRAND        MODEL        RATE/DAY       STATUS
+------------------------------------------------------------------------
+V101    Car      Toyota       Camry        Rs. 2,000.00  AVAILABLE
+V104    Car      BMW          5 Series     Rs. 5,000.00  AVAILABLE
+V105    Car      Mercedes-Benz C-Class      Rs. 5,500.00  AVAILABLE
+V106    Car      Audi         A4           Rs. 4,500.00  AVAILABLE
+V107    Car      Bugatti      Chiron       Rs. 25,000.00 AVAILABLE
+V108    Car      Mahindra     Thar         Rs. 3,000.00  AVAILABLE
+V109    Car      Hyundai      Creta        Rs. 2,500.00  AVAILABLE
+V102    Bike     Yamaha       R15          Rs. 700.00    AVAILABLE
+V110    Bike     Royal Enfield Classic 350  Rs. 800.00    AVAILABLE
+V111    Bike     Kawasaki     Ninja 650    Rs. 1,500.00  AVAILABLE
+V112    Bike     Harley-Davidson Iron 883     Rs. 1,800.00  AVAILABLE
+V113    Bike     KTM          Duke 390     Rs. 900.00    AVAILABLE
+V114    Bike     Royal Enfield Himalayan 450 Rs. 1,000.00  AVAILABLE
+V103    Van      Tata         Winger       Rs. 3,000.00  AVAILABLE
+V115    Van      Toyota       HiAce        Rs. 4,000.00  AVAILABLE
+V116    Van      Force        Traveller    Rs. 3,500.00  AVAILABLE
+
+Enter customer ID: C001
+Enter vehicle ID: V110
+Enter rental days: 4
+
+RENTAL SUMMARY
+Customer       : Ananya Sharma
+Vehicle        : V110 (Bike)
+Rental days    : 4
+Rental amount  : Rs. 3,200.00
+
+Confirm rental and continue to payment? (y/n): y
+
+PAYMENT METHOD
+1. Card
+2. UPI
+Select payment method: 1
+For security, do NOT enter the full card number.
+Enter last 4 digits of card: 5623
+
+========================================================================
+✅ PAYMENT COMPLETED SUCCESSFULLY
+Payment method : Card
+Reference      : CARD-20260826165720428351
+Amount paid    : Rs. 3,200.00
+Rental ID      : R001
+Due date       : 2026-08-30
+Vehicle status : UNAVAILABLE
+✅ Rental confirmed successfully.
+========================================================================
+
+Press Enter to continue...
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
+Enter your choice: 9
+
+========================================================================
+                             ACTIVE RENTALS                             
+========================================================================
+R001 | Ananya Sharma | V110 | Bike | 4 day(s) | Due: 2026-08-30
+
+Press Enter to continue...
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
+Enter your choice: 2
+
+========================================================================
+                            SEARCH VEHICLES                             
+========================================================================
+1. Search by vehicle ID
+2. Search by vehicle type
+3. Search by maximum daily price
+4. Show all
+
+Enter your choice: 1
+Enter vehicle ID: V110
+
+========================================================================
+                           AVAILABLE VEHICLES                           
+========================================================================
+ID      TYPE     BRAND        MODEL        RATE/DAY       STATUS
+------------------------------------------------------------------------
+V110    Bike     Royal Enfield Classic 350  Rs. 800.00    UNAVAILABLE
+
+Press Enter to continue...
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
+Enter your choice: 7
+
+========================================================================
+                        CUSTOMER RENTAL HISTORY                         
+========================================================================
+Enter customer ID: C001
+
+Rental History - Ananya Sharma
+----------------------------------------------------------------------
+R001 | Bike V110 | 4 day(s) | Rs. 3,200.00 | ACTIVE
+
+Press Enter to continue...
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
+Enter your choice: 6
+
+========================================================================
+                             RETURN VEHICLE                             
+========================================================================
+ACTIVE RENTALS
+------------------------------------------------------------------------
+R001 | Ananya Sharma | V110 | Due: 2026-08-30 | Base: Rs. 3,200.00
+
+Enter rental ID: V110
+Enter actual return date (YYYY-MM-DD): 2026-09-03
+
+❌ ERROR: Rental V110 was not found.
+Please try again.
+
+Press Enter to continue...
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
+Enter your choice: 6
+
+========================================================================
+                             RETURN VEHICLE                             
+========================================================================
+ACTIVE RENTALS
+------------------------------------------------------------------------
+R001 | Ananya Sharma | V110 | Due: 2026-08-30 | Base: Rs. 3,200.00
+
+Enter rental ID: R001
+Enter actual return date (YYYY-MM-DD): 2026-09-03
+
+✅ Vehicle returned successfully.
+⚠️ The vehicle was returned late.
+
+================ FINAL INVOICE ================
+Rental ID       : R001
+Customer        : Ananya Sharma
+Vehicle         : V110 - Bike
+Rental days     : 4
+Start date      : 2026-08-26
+Due date        : 2026-08-30
+Return date     : 2026-09-03
+Base amount     : Rs. 3,200.00
+Late fee        : Rs. 640.00
+Final amount    : Rs. 3,840.00
+===============================================
+
+
+Press Enter to continue...
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
+Enter your choice: 9
+
+========================================================================
+                             ACTIVE RENTALS                             
+========================================================================
+No active rentals.
+
+Press Enter to continue...
