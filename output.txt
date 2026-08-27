@@ -62,6 +62,33 @@ Press Enter to continue...
 9. 📊 View active rentals
 0. 🚪 Exit
 
+Enter your choice: 4
+
+========================================================================
+                               CUSTOMERS                                
+========================================================================
+C001 | Ananya Sharma | ananya@example.com | Licence: LIC001
+C002 | Rahul Verma | rahul@example.com | Licence: LIC002
+C003 | Priya Singh | priya@example.com | Licence: LIC003
+C004 | Arjun Mehta | arjun@example.com | Licence: LIC004
+C005 | Sneha Kapoor | sneha@example.com | Licence: LIC005
+
+Press Enter to continue...
+
+========================================================================
+                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
+========================================================================
+1. 🚗 Display all vehicles
+2. 🔎 Search vehicles
+3. 👤 Register new customer (e.g., C001)
+4. 👥 Display customers
+5. 📝 Rent a vehicle
+6. 🔄 Return a vehicle
+7. 📜 View customer rental history
+8. 🧾 View rental / invoice
+9. 📊 View active rentals
+0. 🚪 Exit
+
 Enter your choice: 5
 
 ========================================================================
@@ -91,93 +118,33 @@ V115    Van      Toyota       HiAce        Rs. 4,000.00  AVAILABLE
 V116    Van      Force        Traveller    Rs. 3,500.00  AVAILABLE
 
 Enter customer ID: C001
-Enter vehicle ID: V110
-Enter rental days: 4
+Enter vehicle ID: V102
+Enter rental days: 5
 
 RENTAL SUMMARY
 Customer       : Ananya Sharma
-Vehicle        : V110 (Bike)
-Rental days    : 4
-Rental amount  : Rs. 3,200.00
+Vehicle        : V102 (Bike)
+Rental days    : 5
+Rental amount  : Rs. 3,500.00
 
-Confirm rental and continue to payment? (y/n): y
+Confirm rental and continue to payment? (y/n): Y
 
 PAYMENT METHOD
 1. Card
 2. UPI
-Select payment method: 1
-For security, do NOT enter the full card number.
-Enter last 4 digits of card: 5623
+Select payment method: 2
+Enter UPI ID (example: name@upi): ayush@gmail.com
 
 ========================================================================
 ✅ PAYMENT COMPLETED SUCCESSFULLY
-Payment method : Card
-Reference      : CARD-20260826165720428351
-Amount paid    : Rs. 3,200.00
+Payment method : UPI
+Reference      : UPI-20260827103547586246
+Amount paid    : Rs. 3,500.00
 Rental ID      : R001
-Due date       : 2026-08-30
+Due date       : 2026-09-01
 Vehicle status : UNAVAILABLE
 ✅ Rental confirmed successfully.
 ========================================================================
-
-Press Enter to continue...
-
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
-
-Enter your choice: 9
-
-========================================================================
-                             ACTIVE RENTALS                             
-========================================================================
-R001 | Ananya Sharma | V110 | Bike | 4 day(s) | Due: 2026-08-30
-
-Press Enter to continue...
-
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
-
-Enter your choice: 2
-
-========================================================================
-                            SEARCH VEHICLES                             
-========================================================================
-1. Search by vehicle ID
-2. Search by vehicle type
-3. Search by maximum daily price
-4. Show all
-
-Enter your choice: 1
-Enter vehicle ID: V110
-
-========================================================================
-                           AVAILABLE VEHICLES                           
-========================================================================
-ID      TYPE     BRAND        MODEL        RATE/DAY       STATUS
-------------------------------------------------------------------------
-V110    Bike     Royal Enfield Classic 350  Rs. 800.00    UNAVAILABLE
 
 Press Enter to continue...
 
@@ -204,7 +171,7 @@ Enter customer ID: C001
 
 Rental History - Ananya Sharma
 ----------------------------------------------------------------------
-R001 | Bike V110 | 4 day(s) | Rs. 3,200.00 | ACTIVE
+R001 | Bike V102 | 5 day(s) | Rs. 3,500.00 | ACTIVE
 
 Press Enter to continue...
 
@@ -222,63 +189,26 @@ Press Enter to continue...
 9. 📊 View active rentals
 0. 🚪 Exit
 
-Enter your choice: 6
+Enter your choice: 8
 
 ========================================================================
-                             RETURN VEHICLE                             
+                         VIEW RENTAL / INVOICE                          
 ========================================================================
-ACTIVE RENTALS
-------------------------------------------------------------------------
-R001 | Ananya Sharma | V110 | Due: 2026-08-30 | Base: Rs. 3,200.00
-
-Enter rental ID: V110
-Enter actual return date (YYYY-MM-DD): 2026-09-03
-
-❌ ERROR: Rental V110 was not found.
-Please try again.
-
-Press Enter to continue...
-
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
-
-Enter your choice: 6
-
-========================================================================
-                             RETURN VEHICLE                             
-========================================================================
-ACTIVE RENTALS
-------------------------------------------------------------------------
-R001 | Ananya Sharma | V110 | Due: 2026-08-30 | Base: Rs. 3,200.00
+R001 | Bike V102 | 5 day(s) | Rs. 3,500.00 | ACTIVE
 
 Enter rental ID: R001
-Enter actual return date (YYYY-MM-DD): 2026-09-03
-
-✅ Vehicle returned successfully.
-⚠️ The vehicle was returned late.
 
 ================ FINAL INVOICE ================
 Rental ID       : R001
 Customer        : Ananya Sharma
-Vehicle         : V110 - Bike
-Rental days     : 4
-Start date      : 2026-08-26
-Due date        : 2026-08-30
-Return date     : 2026-09-03
-Base amount     : Rs. 3,200.00
-Late fee        : Rs. 640.00
-Final amount    : Rs. 3,840.00
+Vehicle         : V102 - Bike
+Rental days     : 5
+Start date      : 2026-08-27
+Due date        : 2026-09-01
+Return date     : Not returned
+Base amount     : Rs. 3,500.00
+Late fee        : Rs. 0.00
+Final amount    : Rs. 3,500.00
 ===============================================
 
 
@@ -298,11 +228,30 @@ Press Enter to continue...
 9. 📊 View active rentals
 0. 🚪 Exit
 
-Enter your choice: 9
+Enter your choice: 6
 
 ========================================================================
-                             ACTIVE RENTALS                             
+                             RETURN VEHICLE                             
 ========================================================================
-No active rentals.
+ACTIVE RENTALS
+------------------------------------------------------------------------
+R001 | Ananya Sharma | V102 | Due: 2026-09-01 | Base: Rs. 3,500.00
 
-Press Enter to continue...
+Enter rental ID: R001
+Enter actual return date (YYYY-MM-DD): 2026-09-05
+
+✅ Vehicle returned successfully.
+⚠️ The vehicle was returned late.
+
+================ FINAL INVOICE ================
+Rental ID       : R001
+Customer        : Ananya Sharma
+Vehicle         : V102 - Bike
+Rental days     : 5
+Start date      : 2026-08-27
+Due date        : 2026-09-01
+Return date     : 2026-09-05
+Base amount     : Rs. 3,500.00
+Late fee        : Rs. 3,360.00
+Final amount    : Rs. 6,860.00
+===============================================
