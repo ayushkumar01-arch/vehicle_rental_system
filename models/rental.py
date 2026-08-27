@@ -10,7 +10,7 @@ from models.invoice import Invoice
 class Rental:
     """Composition: a Rental contains a Customer, Vehicle and payment result."""
 
-    LATE_FEE_RATE = 0.20
+    LATE_FEE_RATE = 1.20
 
     def __init__(
         self,
