@@ -1,257 +1,397 @@
-========================================================================
-              WELCOME TO VEHICLE RENTAL MANAGEMENT SYSTEM               
-========================================================================
-Startup data loaded successfully.
-You can now manage vehicles, customers, rentals and payments.
+==============================================================================
+                 WELCOME TO VEHICLE RENTAL MANAGEMENT SYSTEM                  
+==============================================================================
+✅ Persistent storage enabled
+✅ Reservations + date availability enabled
+✅ Fuel tracking + damage inspection enabled
+✅ Cancellation + refund enabled
 
-Sample login-free data:
-  Vehicles : V101, V102, V103
-  Customers: C001, C002
-
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
+==============================================================================
+                      🚗 VEHICLE RENTAL MANAGEMENT SYSTEM                      
+==============================================================================
+1.  Display vehicle fleet
+2.  Search vehicles
+3.  Check availability by date
+4.  Register customer
+5.  Display customers
+6.  Rent a vehicle now
+7.  Make future reservation
+8.  View reservations
+9.  Start reserved vehicle
+10. Cancel reservation
+11. Return vehicle + inspection
+12. Cancel remaining rental days
+13. View active rentals
+14. View customer rental history
+15. View rental / invoice
+0.  Exit
+------------------------------------------------------------------------------
+Data is automatically saved in data/rental_data.json
 
 Enter your choice: 1
 
-========================================================================
-                           AVAILABLE VEHICLES                           
-========================================================================
-ID      TYPE     BRAND        MODEL        RATE/DAY       STATUS
-------------------------------------------------------------------------
-V101    Car      Toyota       Camry        Rs. 2,000.00  AVAILABLE
-V104    Car      BMW          5 Series     Rs. 5,000.00  AVAILABLE
-V105    Car      Mercedes-Benz C-Class      Rs. 5,500.00  AVAILABLE
-V106    Car      Audi         A4           Rs. 4,500.00  AVAILABLE
-V107    Car      Bugatti      Chiron       Rs. 25,000.00 AVAILABLE
-V108    Car      Mahindra     Thar         Rs. 3,000.00  AVAILABLE
-V109    Car      Hyundai      Creta        Rs. 2,500.00  AVAILABLE
-V102    Bike     Yamaha       R15          Rs. 700.00    AVAILABLE
-V110    Bike     Royal Enfield Classic 350  Rs. 800.00    AVAILABLE
-V111    Bike     Kawasaki     Ninja 650    Rs. 1,500.00  AVAILABLE
-V112    Bike     Harley-Davidson Iron 883     Rs. 1,800.00  AVAILABLE
-V113    Bike     KTM          Duke 390     Rs. 900.00    AVAILABLE
-V114    Bike     Royal Enfield Himalayan 450 Rs. 1,000.00  AVAILABLE
-V103    Van      Tata         Winger       Rs. 3,000.00  AVAILABLE
-V115    Van      Toyota       HiAce        Rs. 4,000.00  AVAILABLE
-V116    Van      Force        Traveller    Rs. 3,500.00  AVAILABLE
+==============================================================================
+                                VEHICLE FLEET                                 
+==============================================================================
+ID      TYPE    VEHICLE                      RATE/DAY       FUEL      STATUS
+------------------------------------------------------------------------------
+V101    Car     Toyota Camry                 Rs. 2,000     100.0%   AVAILABLE
+V102    Bike    Yamaha R15                   Rs. 700        56.0%   AVAILABLE
+V103    Van     Tata Winger                  Rs. 3,000      44.0%   AVAILABLE
+V104    Car     BMW 5 Series                 Rs. 5,000     100.0%   AVAILABLE
+V105    Car     Mercedes-Benz C-Class        Rs. 5,500      78.0%   AVAILABLE
+V106    Car     Audi A4                      Rs. 4,500     100.0%   AVAILABLE
+V107    Car     Bugatti Chiron               Rs. 25,000    100.0%   AVAILABLE
+V108    Car     Mahindra Thar                Rs. 3,000     100.0%   AVAILABLE
+V109    Car     Hyundai Creta                Rs. 2,500     100.0%   AVAILABLE
+V110    Bike    Royal Enfield Classic 350    Rs. 800       100.0%   AVAILABLE
+V111    Bike    Kawasaki Ninja 650           Rs. 1,500     100.0%   AVAILABLE
+V112    Bike    Harley-Davidson Iron 883     Rs. 1,800     100.0%   AVAILABLE
+V113    Bike    KTM Duke 390                 Rs. 900       100.0%   AVAILABLE
+V114    Bike    Royal Enfield Himalayan 450  Rs. 1,000     100.0%   AVAILABLE
+V115    Van     Toyota HiAce                 Rs. 4,000     100.0%   AVAILABLE
+V116    Van     Force Traveller              Rs. 3,500     100.0%   AVAILABLE
 
 Press Enter to continue...
 
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
+==============================================================================
+                      🚗 VEHICLE RENTAL MANAGEMENT SYSTEM                      
+==============================================================================
+1.  Display vehicle fleet
+2.  Search vehicles
+3.  Check availability by date
+4.  Register customer
+5.  Display customers
+6.  Rent a vehicle now
+7.  Make future reservation
+8.  View reservations
+9.  Start reserved vehicle
+10. Cancel reservation
+11. Return vehicle + inspection
+12. Cancel remaining rental days
+13. View active rentals
+14. View customer rental history
+15. View rental / invoice
+0.  Exit
+------------------------------------------------------------------------------
+Data is automatically saved in data/rental_data.json
 
 Enter your choice: 4
 
-========================================================================
-                               CUSTOMERS                                
-========================================================================
+==============================================================================
+                              REGISTER CUSTOMER                               
+==============================================================================
+Customer ID: C006
+Full name: Ayush kumar
+Email: ayush@gmail.com
+Driving licence number: 4563
+
+✅ Customer C006 registered successfully.
+
+Press Enter to continue...
+
+==============================================================================
+                      🚗 VEHICLE RENTAL MANAGEMENT SYSTEM                      
+==============================================================================
+1.  Display vehicle fleet
+2.  Search vehicles
+3.  Check availability by date
+4.  Register customer
+5.  Display customers
+6.  Rent a vehicle now
+7.  Make future reservation
+8.  View reservations
+9.  Start reserved vehicle
+10. Cancel reservation
+11. Return vehicle + inspection
+12. Cancel remaining rental days
+13. View active rentals
+14. View customer rental history
+15. View rental / invoice
+0.  Exit
+------------------------------------------------------------------------------
+Data is automatically saved in data/rental_data.json
+
+Enter your choice: 5
+
+==============================================================================
+                                  CUSTOMERS                                   
+==============================================================================
 C001 | Ananya Sharma | ananya@example.com | Licence: LIC001
 C002 | Rahul Verma | rahul@example.com | Licence: LIC002
 C003 | Priya Singh | priya@example.com | Licence: LIC003
 C004 | Arjun Mehta | arjun@example.com | Licence: LIC004
 C005 | Sneha Kapoor | sneha@example.com | Licence: LIC005
+C006 | Ayush kumar | ayush@gmail.com | Licence: 4563
 
 Press Enter to continue...
 
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
+==============================================================================
+                      🚗 VEHICLE RENTAL MANAGEMENT SYSTEM                      
+==============================================================================
+1.  Display vehicle fleet
+2.  Search vehicles
+3.  Check availability by date
+4.  Register customer
+5.  Display customers
+6.  Rent a vehicle now
+7.  Make future reservation
+8.  View reservations
+9.  Start reserved vehicle
+10. Cancel reservation
+11. Return vehicle + inspection
+12. Cancel remaining rental days
+13. View active rentals
+14. View customer rental history
+15. View rental / invoice
+0.  Exit
+------------------------------------------------------------------------------
+Data is automatically saved in data/rental_data.json
 
-Enter your choice: 5
+Enter your choice: 6
 
-========================================================================
-                             RENT A VEHICLE                             
-========================================================================
-
-========================================================================
-                           AVAILABLE VEHICLES                           
-========================================================================
-ID      TYPE     BRAND        MODEL        RATE/DAY       STATUS
-------------------------------------------------------------------------
-V101    Car      Toyota       Camry        Rs. 2,000.00  AVAILABLE
-V104    Car      BMW          5 Series     Rs. 5,000.00  AVAILABLE
-V105    Car      Mercedes-Benz C-Class      Rs. 5,500.00  AVAILABLE
-V106    Car      Audi         A4           Rs. 4,500.00  AVAILABLE
-V107    Car      Bugatti      Chiron       Rs. 25,000.00 AVAILABLE
-V108    Car      Mahindra     Thar         Rs. 3,000.00  AVAILABLE
-V109    Car      Hyundai      Creta        Rs. 2,500.00  AVAILABLE
-V102    Bike     Yamaha       R15          Rs. 700.00    AVAILABLE
-V110    Bike     Royal Enfield Classic 350  Rs. 800.00    AVAILABLE
-V111    Bike     Kawasaki     Ninja 650    Rs. 1,500.00  AVAILABLE
-V112    Bike     Harley-Davidson Iron 883     Rs. 1,800.00  AVAILABLE
-V113    Bike     KTM          Duke 390     Rs. 900.00    AVAILABLE
-V114    Bike     Royal Enfield Himalayan 450 Rs. 1,000.00  AVAILABLE
-V103    Van      Tata         Winger       Rs. 3,000.00  AVAILABLE
-V115    Van      Toyota       HiAce        Rs. 4,000.00  AVAILABLE
-V116    Van      Force        Traveller    Rs. 3,500.00  AVAILABLE
-
-Enter customer ID: C001
-Enter vehicle ID: V102
-Enter rental days: 5
+==============================================================================
+                                 RENT VEHICLE                                 
+==============================================================================
+Customer ID: C006
+Vehicle ID: V109
+Rental days: 2
+Pickup date (YYYY-MM-DD): 2026-09-03
 
 RENTAL SUMMARY
-Customer       : Ananya Sharma
-Vehicle        : V102 (Bike)
-Rental days    : 5
-Rental amount  : Rs. 3,500.00
-
-Confirm rental and continue to payment? (y/n): Y
+--------------------------------------------------
+Customer       : Ayush kumar
+Vehicle        : Hyundai Creta
+Pickup         : 2026-09-03
+Return         : 2026-09-05
+Rental days    : 2
+Pickup fuel    : 100.0%
+Rental amount  : Rs. 5,000.00
+--------------------------------------------------
+Confirm? (y/n): y
 
 PAYMENT METHOD
 1. Card
 2. UPI
-Select payment method: 2
-Enter UPI ID (example: name@upi): ayush@gmail.com
+Choose payment method: 2
+Enter UPI ID (example: name@upi): ayush88@upi
 
-========================================================================
-✅ PAYMENT COMPLETED SUCCESSFULLY
-Payment method : UPI
-Reference      : UPI-20260827103547586246
-Amount paid    : Rs. 3,500.00
-Rental ID      : R001
-Due date       : 2026-09-01
-Vehicle status : UNAVAILABLE
-✅ Rental confirmed successfully.
-========================================================================
+✅ RENTAL CONFIRMED
+Rental ID      : R004
+Payment ref    : UPI-20260903180530592979
+Amount paid    : Rs. 5,000.00
+Due date       : 2026-09-05
+Pickup fuel    : 100.0%
 
 Press Enter to continue...
 
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
+==============================================================================
+                      🚗 VEHICLE RENTAL MANAGEMENT SYSTEM                      
+==============================================================================
+1.  Display vehicle fleet
+2.  Search vehicles
+3.  Check availability by date
+4.  Register customer
+5.  Display customers
+6.  Rent a vehicle now
+7.  Make future reservation
+8.  View reservations
+9.  Start reserved vehicle
+10. Cancel reservation
+11. Return vehicle + inspection
+12. Cancel remaining rental days
+13. View active rentals
+14. View customer rental history
+15. View rental / invoice
+0.  Exit
+------------------------------------------------------------------------------
+Data is automatically saved in data/rental_data.json
 
-Enter your choice: 7
+Enter your choice: 11
 
-========================================================================
-                        CUSTOMER RENTAL HISTORY                         
-========================================================================
-Enter customer ID: C001
+==============================================================================
+                         RETURN VEHICLE + INSPECTION                          
+==============================================================================
+R004 | Ayush kumar | V109 | Due: 2026-09-05 | Pickup fuel: 100.0%
 
-Rental History - Ananya Sharma
+Rental ID: R004
+Actual return date (YYYY-MM-DD): 2026-09-07 
+Fuel at return (0-100): 68
+
+======================================================================
+                          DAMAGE INSPECTION                           
+======================================================================
+1. No damage
+2. Vehicle has damage
+======================================================================
+Choose option: 2
+
+SELECT DAMAGE
 ----------------------------------------------------------------------
-R001 | Bike V102 | 5 day(s) | Rs. 3,500.00 | ACTIVE
+ 1. Small scratch / paint mark             Fine: Rs.   500.00
+ 2. Deep / large scratch                   Fine: Rs. 1,200.00
+ 3. Small dent                             Fine: Rs. 1,000.00
+ 4. Large dent / body damage               Fine: Rs. 2,500.00
+ 5. Broken mirror                          Fine: Rs. 1,500.00
+ 6. Headlight / tail light damage          Fine: Rs. 3,000.00
+ 7. Indicator damage                       Fine: Rs.   800.00
+ 8. Brake damage                           Fine: Rs. 5,000.00
+ 9. Tyre damage / puncture                 Fine: Rs. 1,200.00
+10. Handlebar / steering damage            Fine: Rs. 2,000.00
+ 0. Finish
+----------------------------------------------------------------------
+Select damage option: 1
+
+✓ Damage selected: Small scratch / paint mark
+✓ Automatically added fine: Rs. 500.00
+
+1. Add another damage
+2. Finish inspection
+Choose: 1
+
+SELECT DAMAGE
+----------------------------------------------------------------------
+ 1. Small scratch / paint mark             Fine: Rs.   500.00
+ 2. Deep / large scratch                   Fine: Rs. 1,200.00
+ 3. Small dent                             Fine: Rs. 1,000.00
+ 4. Large dent / body damage               Fine: Rs. 2,500.00
+ 5. Broken mirror                          Fine: Rs. 1,500.00
+ 6. Headlight / tail light damage          Fine: Rs. 3,000.00
+ 7. Indicator damage                       Fine: Rs.   800.00
+ 8. Brake damage                           Fine: Rs. 5,000.00
+ 9. Tyre damage / puncture                 Fine: Rs. 1,200.00
+10. Handlebar / steering damage            Fine: Rs. 2,000.00
+ 0. Finish
+----------------------------------------------------------------------
+Select damage option: 3
+
+✓ Damage selected: Small dent
+✓ Automatically added fine: Rs. 1,000.00
+
+1. Add another damage
+2. Finish inspection
+Choose: 2
+
+SELECTED DAMAGES
+----------------------------------------------------------------------
+✓ Small scratch / paint mark                    Rs.   500.00
+✓ Small dent                                    Rs. 1,000.00
+----------------------------------------------------------------------
+TOTAL DAMAGE FINE                                 Rs. 1,500.00
+----------------------------------------------------------------------
+
+================ FINAL INVOICE ================
+Rental ID       : R004
+Customer        : Ayush kumar
+Vehicle         : V109 - Car
+Rental days     : 2
+Start date      : 2026-09-03
+Due date        : 2026-09-05
+Return date     : 2026-09-07
+Base amount     : Rs. 5,000.00
+Late fee        : Rs. 6,000.00
+Fuel charge     : Rs. 800.00
+Damage charge   : Rs. 1,500.00
+Damage details:
+  - Small scratch / paint mark : Rs. 500.00
+  - Small dent : Rs. 1,000.00
+Final amount    : Rs. 13,300.00
+===============================================
+
+💳 EXTRA PAYMENT REQUIRED: Rs. 8,300.00
+
+PAYMENT METHOD
+1. Card
+2. UPI
+Choose payment method: 2
+Enter UPI ID (example: name@upi): ayush88@upi
+✅ Extra payment successful: UPI-20260903180653610486
 
 Press Enter to continue...
 
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
+==============================================================================
+                      🚗 VEHICLE RENTAL MANAGEMENT SYSTEM                      
+==============================================================================
+1.  Display vehicle fleet
+2.  Search vehicles
+3.  Check availability by date
+4.  Register customer
+5.  Display customers
+6.  Rent a vehicle now
+7.  Make future reservation
+8.  View reservations
+9.  Start reserved vehicle
+10. Cancel reservation
+11. Return vehicle + inspection
+12. Cancel remaining rental days
+13. View active rentals
+14. View customer rental history
+15. View rental / invoice
+0.  Exit
+------------------------------------------------------------------------------
+Data is automatically saved in data/rental_data.json
 
-Enter your choice: 8
+Enter your choice: 14
 
-========================================================================
-                         VIEW RENTAL / INVOICE                          
-========================================================================
-R001 | Bike V102 | 5 day(s) | Rs. 3,500.00 | ACTIVE
-
-Enter rental ID: R001
-
-================ FINAL INVOICE ================
-Rental ID       : R001
-Customer        : Ananya Sharma
-Vehicle         : V102 - Bike
-Rental days     : 5
-Start date      : 2026-08-27
-Due date        : 2026-09-01
-Return date     : Not returned
-Base amount     : Rs. 3,500.00
-Late fee        : Rs. 0.00
-Final amount    : Rs. 3,500.00
-===============================================
-
+==============================================================================
+                           CUSTOMER RENTAL HISTORY                            
+==============================================================================
+Customer ID: C006
+Rental History - Ayush kumar
+----------------------------------------------------------------------
+R004 | Car V109 | 2 day(s) | Rs. 13,300.00 | RETURNED
 
 Press Enter to continue...
 
-========================================================================
-                    VEHICLE RENTAL MANAGEMENT SYSTEM                    
-========================================================================
-1. 🚗 Display all vehicles
-2. 🔎 Search vehicles
-3. 👤 Register new customer (e.g., C001)
-4. 👥 Display customers
-5. 📝 Rent a vehicle
-6. 🔄 Return a vehicle
-7. 📜 View customer rental history
-8. 🧾 View rental / invoice
-9. 📊 View active rentals
-0. 🚪 Exit
+==============================================================================
+                      🚗 VEHICLE RENTAL MANAGEMENT SYSTEM                      
+==============================================================================
+1.  Display vehicle fleet
+2.  Search vehicles
+3.  Check availability by date
+4.  Register customer
+5.  Display customers
+6.  Rent a vehicle now
+7.  Make future reservation
+8.  View reservations
+9.  Start reserved vehicle
+10. Cancel reservation
+11. Return vehicle + inspection
+12. Cancel remaining rental days
+13. View active rentals
+14. View customer rental history
+15. View rental / invoice
+0.  Exit
+------------------------------------------------------------------------------
+Data is automatically saved in data/rental_data.json
 
-Enter your choice: 6
+Enter your choice: 15
 
-========================================================================
-                             RETURN VEHICLE                             
-========================================================================
-ACTIVE RENTALS
-------------------------------------------------------------------------
-R001 | Ananya Sharma | V102 | Due: 2026-09-01 | Base: Rs. 3,500.00
-
-Enter rental ID: R001
-Enter actual return date (YYYY-MM-DD): 2026-09-05
-
-✅ Vehicle returned successfully.
-⚠️ The vehicle was returned late.
+==============================================================================
+                               RENTAL / INVOICE                               
+==============================================================================
+R001 | Bike V102 | 4 day(s) | Rs. 7,080.00 | RETURNED
+R002 | Van V103 | 2 day(s) | Rs. 20,200.00 | RETURNED
+R003 | Car V105 | 3 day(s) | Rs. 31,750.00 | RETURNED
+R004 | Car V109 | 2 day(s) | Rs. 13,300.00 | RETURNED
+Rental ID: R004
 
 ================ FINAL INVOICE ================
-Rental ID       : R001
-Customer        : Ananya Sharma
-Vehicle         : V102 - Bike
-Rental days     : 5
-Start date      : 2026-08-27
-Due date        : 2026-09-01
-Return date     : 2026-09-05
-Base amount     : Rs. 3,500.00
-Late fee        : Rs. 3,360.00
-Final amount    : Rs. 6,860.00
+Rental ID       : R004
+Customer        : Ayush kumar
+Vehicle         : V109 - Car
+Rental days     : 2
+Start date      : 2026-09-03
+Due date        : 2026-09-05
+Return date     : 2026-09-07
+Base amount     : Rs. 5,000.00
+Late fee        : Rs. 6,000.00
+Fuel charge     : Rs. 800.00
+Damage charge   : Rs. 1,500.00
+Damage details:
+  - Small scratch / paint mark : Rs. 500.00
+  - Small dent : Rs. 1,000.00
+Final amount    : Rs. 13,300.00
 ===============================================
+
+Press Enter to continue...
