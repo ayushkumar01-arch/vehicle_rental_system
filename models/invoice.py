@@ -2,19 +2,23 @@ from datetime import date
 
 
 class Invoice:
-    """Represents the final financial breakdown of a rental."""
+    """Final financial breakdown of a rental."""
 
     def __init__(
         self,
-        rental_id: str,
-        customer_name: str,
+        rental_id,
+        customer_name,
         vehicle,
-        rental_days: int,
-        start_date: date,
-        due_date: date,
-        base_amount: float,
-        late_fee: float = 0.0,
+        rental_days,
+        start_date,
+        due_date,
+        base_amount,
+        late_fee=0.0,
+        fuel_charge=0.0,
+        damage_charge=0.0,
+        damage_items=None,
         return_date: date | None = None,
+        cancellation_refund=0.0,
     ):
         self.__rental_id = rental_id
         self.__customer_name = customer_name
@@ -24,11 +28,21 @@ class Invoice:
         self.__due_date = due_date
         self.__base_amount = base_amount
         self.__late_fee = late_fee
+        self.__fuel_charge = fuel_charge
+        self.__damage_charge = damage_charge
+        self.__damage_items = damage_items or []
         self.__return_date = return_date
+        self.__cancellation_refund = cancellation_refund
 
     @property
     def final_amount(self):
-        return self.__base_amount + self.__late_fee
+        return (
+            self.__base_amount
+            + self.__late_fee
+            + self.__fuel_charge
+            + self.__damage_charge
+            - self.__cancellation_refund
+        )
 
     def generate(self):
         return {
@@ -41,23 +55,37 @@ class Invoice:
             "return_date": self.__return_date,
             "base_amount": self.__base_amount,
             "late_fee": self.__late_fee,
+            "fuel_charge": self.__fuel_charge,
+            "damage_charge": self.__damage_charge,
+            "damage_items": self.__damage_items,
+            "cancellation_refund": self.__cancellation_refund,
             "final_amount": self.final_amount,
         }
 
     def display(self):
         data = self.generate()
-        return (
-            "\n"
-            "================ FINAL INVOICE ================\n"
-            f"Rental ID       : {data['rental_id']}\n"
-            f"Customer        : {data['customer']}\n"
-            f"Vehicle         : {data['vehicle']}\n"
-            f"Rental days     : {data['rental_days']}\n"
-            f"Start date      : {data['start_date']}\n"
-            f"Due date        : {data['due_date']}\n"
-            f"Return date     : {data['return_date'] or 'Not returned'}\n"
-            f"Base amount     : Rs. {data['base_amount']:,.2f}\n"
-            f"Late fee        : Rs. {data['late_fee']:,.2f}\n"
-            f"Final amount    : Rs. {data['final_amount']:,.2f}\n"
-            "===============================================\n"
-        )
+        lines = [
+            "\n================ FINAL INVOICE ================",
+            f"Rental ID       : {data['rental_id']}",
+            f"Customer        : {data['customer']}",
+            f"Vehicle         : {data['vehicle']}",
+            f"Rental days     : {data['rental_days']}",
+            f"Start date      : {data['start_date']}",
+            f"Due date        : {data['due_date']}",
+            f"Return date     : {data['return_date'] or 'Not returned'}",
+            f"Base amount     : Rs. {data['base_amount']:,.2f}",
+            f"Late fee        : Rs. {data['late_fee']:,.2f}",
+            f"Fuel charge     : Rs. {data['fuel_charge']:,.2f}",
+            f"Damage charge   : Rs. {data['damage_charge']:,.2f}",
+        ]
+        if data["damage_items"]:
+            lines.append("Damage details:")
+            for item in data["damage_items"]:
+                lines.append(f"  - {item['description']} : Rs. {item['charge']:,.2f}")
+        if data["cancellation_refund"]:
+            lines.append(f"Cancellation refund: -Rs. {data['cancellation_refund']:,.2f}")
+        lines.extend([
+            f"Final amount    : Rs. {data['final_amount']:,.2f}",
+            "===============================================",
+        ])
+        return "\n".join(lines)

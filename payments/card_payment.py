@@ -5,12 +5,6 @@ from payments.payment_processor import PaymentProcessor
 
 
 class CardPayment(PaymentProcessor):
-    """Card payment implementation.
-
-    Only the last four digits are accepted and retained.
-    Full card numbers are never stored.
-    """
-
     def __init__(self, card_last_four: str):
         if not card_last_four.isdigit() or len(card_last_four) != 4:
             raise ValidationError("Enter exactly the last 4 digits of the card.")
@@ -19,11 +13,21 @@ class CardPayment(PaymentProcessor):
     def process_payment(self, amount: float) -> dict:
         if amount <= 0:
             raise PaymentFailedError("Payment amount must be greater than zero.")
-
         return {
             "method": "Card",
             "status": "SUCCESS",
             "amount": amount,
             "reference": f"CARD-{datetime.now().strftime('%Y%m%d%H%M%S%f')}",
+            "masked_account": f"**** **** **** {self.__card_last_four}",
+        }
+
+    def refund_payment(self, amount: float) -> dict:
+        if amount <= 0:
+            raise PaymentFailedError("Refund amount must be greater than zero.")
+        return {
+            "method": "Card Refund",
+            "status": "REFUNDED",
+            "amount": amount,
+            "reference": f"REFUND-CARD-{datetime.now().strftime('%Y%m%d%H%M%S%f')}",
             "masked_account": f"**** **** **** {self.__card_last_four}",
         }

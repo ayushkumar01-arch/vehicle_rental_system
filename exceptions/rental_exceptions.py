@@ -7,7 +7,7 @@ class ValidationError(RentalSystemError):
 
 
 class VehicleUnavailableError(RentalSystemError):
-    """Raised when a vehicle is already rented or unavailable."""
+    """Raised when a vehicle is unavailable for the requested period."""
 
 
 class InvalidRentalDurationError(RentalSystemError):
@@ -23,4 +23,8 @@ class RentalNotFoundError(RentalSystemError):
 
 
 class InvalidReturnDateError(RentalSystemError):
-    """Raised when a return date is invalid."""
+    """Raised when a return/cancellation date is invalid."""
+
+
+class ReservationNotFoundError(RentalSystemError):
+    """Raised when a reservation cannot be found."""

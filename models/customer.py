@@ -4,20 +4,13 @@ from exceptions.rental_exceptions import ValidationError
 class Customer:
     """Customer with private data and rental history."""
 
-    def __init__(
-        self,
-        customer_id: str,
-        name: str,
-        email: str,
-        licence_number: str,
-    ):
+    def __init__(self, customer_id, name, email, licence_number):
         values = {
             "Customer ID": customer_id,
             "Name": name,
             "Email": email,
             "Driving licence number": licence_number,
         }
-
         for field_name, value in values.items():
             if not str(value).strip():
                 raise ValidationError(f"{field_name} cannot be empty.")
@@ -49,12 +42,12 @@ class Customer:
         return tuple(self.__rental_history)
 
     def add_rental(self, rental):
-        self.__rental_history.append(rental)
+        if rental not in self.__rental_history:
+            self.__rental_history.append(rental)
 
     def display_rental_history(self):
         if not self.__rental_history:
             return f"No rental history found for {self.name}."
-
         lines = [f"Rental History - {self.name}", "-" * 70]
         for rental in self.__rental_history:
             lines.append(rental.summary())
